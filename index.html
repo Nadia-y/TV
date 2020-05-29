@@ -11,11 +11,12 @@
     <title>TV</title>
 </head>
 <body>
+ 
     <header>
-      <div class="container">   
-        <nav class="navbar navbar-expand-lg navbar-light d-flex" style="background-color: #f2f8fd" >
+        <nav class="navbar  navbar-expand-lg navbar-light d-flex navbar-fixed-top" style="background-color: #f2f8fd" >
+          <div class="container">  
             <a class="navbar-brand" href="#">  
-                <img class="mobilapp" src="assets/img/ll.png">
+              <img class="mobilapp" src="assets/img/ll.png">
             </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -165,12 +166,16 @@
                   <div class="activities__package-tv">
                     <p class="activities__p"> Крупнейший спутниковый оператор, лидер отечественного рынка платного спутниково телевидения по количеству абонентов</p>
                   <div class="control__form-agreement">
-                    <input class="control__form_check" id="control__form_check" type="checkbox"> 
-                    <label class="control__form_lab activities__p" for="control__form_check" >Более 200 каналов за 1500 рублей год.</label>
+                    <label class="control__form_lab activities__p-lab" for="control__form_check" >
+                      <input class="control__form_check" id="control__form_check" type="checkbox"> 
+                        Более 200 каналов за 1500 рублей год.
+                    </label>
                 </div>
                 <div class="control__form-agreement">
-                  <input class="control__form_check " id="control__form_check" type="checkbox"> 
-                  <label class="control__form_lab activities__p" for="control__form_check" >Телеканалы HD и UltraHD 4K</label>
+                  <label class="control__form_lab activities__p-lab" for="control__form_check" >
+                    <input class="control__form_check " id="control__form_check" type="checkbox"> 
+                      Телеканалы HD и UltraHD 4K
+                  </label>
               </div>
                   <div class="activities__layer"> 
                     <button class="activities__btn">Заказать</button>
@@ -196,13 +201,18 @@
               <div class="activities__package-tv">
                 <p class="activities__p"> Первая спутниковая телеомпания, уже более 20 лет являющаяся лидером на отечественном рынке.</p>
                 <div class="control__form-agreement">
-                  <input class="control__form_check" id="control__form_check" type="checkbox"> 
-                  <label class="control__form_lab activities__p" for="control__form_check" >Около 200 телеканалов за 149 рублей в месяц. </label>
+                  <label class="control__form_lab activities__p-lab" for="control__form_check" >
+                    <input class="control__form_check" id="control__form_check" type="checkbox"> 
+                      Около 200 телеканалов за 149 рублей в месяц. 
+                  </label>
               </div>
               <div class="control__form-agreement">
-                <input class="control__form_check " id="control__form_check" type="checkbox"> 
-                <label class="control__form_lab activities__p" for="control__form_check" >Уникальные телепрограммы собственного производства</label>
+                <label class="control__form_lab activities__p-lab" for="control__form_check" >
+                  <input class="control__form_check " id="control__form_check" type="checkbox"> 
+                    Уникальные телепрограммы собственного производства
+                </label>
               </div>
+
                 <div class="activities__layer"> 
                   <button class="activities__btn">Заказать</button>
                 </div>
@@ -336,12 +346,6 @@
             <div class="contacts__icons">
               <div class="contacts__icons-name">
                       <a href="#">
-                          <i class="tg fab fa-telegram-plane"></i>
-                          <p class="contacts__name">Telegram</p>
-                      </a>
-              </div>
-              <div class="contacts__icons-name">
-                      <a href="#">
                           <i class="vb fab fa-viber"></i>
                           <p class="contacts__name">Viber</p>
                       </a>
@@ -365,6 +369,12 @@
                       </a>
               </div>
               <div class="contacts__icons-name">
+                <a href="#">
+                    <i class="tg fab fa-telegram-plane"></i>
+                    <p class="contacts__name">Telegram</p>
+                </a>
+              </div>
+              <div class="contacts__icons-name">
                       <a href="#">
                           <i class="vk fab fa-vk"></i>
                           <p class="contacts__name">Vkontakte</p>
@@ -380,25 +390,49 @@
 
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <p class="footer__direction">В торговомм реестре с 18 декабря 2017 за №400683 <br>
-              ИП Кондратович Татьяна Васильевна <br>
-              Могилевская обл, г. Кричев, м-н Сож 10А-12 <br>
-              Регистрация №791078839 в Кричевском РИК от 17.10.2017г УНП 791078839
-            </p>
+        <div class="row ">
+            <div class="col-lg-4 ">
+              <p class="footer__direction ">В торговомм реестре с 18 декабря 2017 за №400683 <br>
+                ИП Кондратович Татьяна Васильевна <br>
+                Могилевская обл, г. Кричев, м-н Сож 10А-12 <br>
+                Регистрация №791078839 в Кричевском РИК от 17.10.2017г УНП 791078839
+              </p>
           </div>
           <div class="col-lg-4">
             <p class="footer__link"> <a href="#"> Контакты</a> </p>
-
           </div>
           <div class="col-lg-4">
             <p class="footer__link"> <a href="#"> Карта сайта</a> </p>
           </div>
-            </div>
-            </div>
+       
+        </div>
+      </div>
 
     </footer>
+    <!-- Form-->
+    <button onclick="show('block')" class="group__btn fix" >  Заказать звонок </button>
+    <div id="filter" onclick="show('none')"></div>
+    <div id="modal">
+      <form class="form__modal" action="">
+        <h5 class="form__title">
+          Заказать звонок
+        </h5>
+        <p class="form__text"> Мы свяжемся с Вами в ближайщее время</p>
+        <div class="group">
+          <label class="group__lab" for="">Имя:</label>
+          <input class="group__in" type="text required" >
+        </div>
+        <div class="group">
+          <label class="group__lab"  for="">Номер телефона:</label>
+          <input class="group__in"  type="tel required">
+        </div>
+        <div class="group">
+        <button class="group__btn">  Отправить</button>  
+      </div>
+
+    </form>>
+    </div>
+      
 
 
 

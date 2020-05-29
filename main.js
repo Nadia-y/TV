@@ -30,3 +30,8 @@ $(window).on('hashchange', event => {
     $parentAccordion.accordion('option', 'active', $parentAccordion.find($uiAccordion.accordion('option', 'header')).index($activeAccordion));
   }
 });
+
+var show=function(state){
+document.getElementById('modal').style.display = state;
+document.getElementById('filter').style.display = state;
+}
