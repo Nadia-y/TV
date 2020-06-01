@@ -4,16 +4,39 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-header{
-    background-color: #e1eefa;
-   
+.header{
+    background-image: url(assets/img/fhoto-t.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-bottom: 850px;
+    background-attachment: fixed;
+    
+    
 }
+
+
+   
+    
+   
+
+/* .header__main{
+    background-image: url(assets/img/fhoto-t.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    padding-bottom: 350px;
+} */
 .mobilapp{
     width: 80px;
     height: 80px;
 }
 .navbar{
-    padding-top: 20px;
+    padding: 50px 0 0 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    background:  rgba(255,255,255,0.3);
 }
 .nav-item a{
     font-size: 14px;
@@ -49,6 +72,9 @@ header{
 }
 
 
+
+
+
 .sputnic__tv{
     background-color: #e1eefa;
     background-image: url(assets/img/fon.jpg);
@@ -56,7 +82,6 @@ header{
     background-position: center;
     background-size:contain;
     padding-bottom: 350px;
-  
   
 }
 h1{
@@ -96,7 +121,7 @@ h2{
     font-size:28px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding: 25px;
+    padding: 45px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -154,11 +179,12 @@ h2{
     padding:15px 0 15px; 
 }
 .btn-form{
-    background-color: #be1e23;
+    background-color: #1e73be;
     width: 300px;
     color:white;
     margin-right: 40px;
     margin-bottom:30px;
+  
 }
 .primary__activity{
     border-bottom: 2px solid #6B7F9A;
@@ -275,6 +301,9 @@ body {
   margin-top: var(--accordionContentMargin);
 }
 
+.activities{
+    background-color: #f2f8fd;
+}
 .activities__title{
     font-size:24px;
     font-family: 'Open Sans', sans-serif;
@@ -322,6 +351,7 @@ body {
     position: relative;
     border:0;
     margin-top: 50px;
+    border-radius: 10px;
 }
 .advantages{
     background-color:#1ebeb9;
@@ -357,7 +387,7 @@ body {
 }
 .contacts{
     padding:30px;
-    background-color: #e1eefa;
+    background-color: #f2f8fd;
     
 }
 .contacts__title{
@@ -379,7 +409,7 @@ body {
 }
 
 footer{
-    background-color: #f2f8fd;
+    background-color: #e1eefa;
     padding:15px;
 }
 .footer__direction{
@@ -548,15 +578,17 @@ footer{
 }
 #modal{
     position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
+  
     z-index: 150;
     display: none;
     margin:0 auto;
     width: 380px;
     height: 340px;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -170px;
 }
 #filter{
     background-color: rgba(0, 0, 0, 0.6);
@@ -572,7 +604,6 @@ footer{
     position: fixed;
     top: 2;
     bottom: 0;
-   
     right: 0;
 }
 @media screen and (max-width:1200px){
